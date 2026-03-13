@@ -1,26 +1,3 @@
-/* =========================
-RESET
-========================= */
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-}
-
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
 
 
 /* =========================
@@ -28,7 +5,7 @@ BASE
 ========================= */
 
 body {
-  margin: 115px 0 0 200px;
+  margin: 85px 0 0 200px;
   font-family: 'Pretendard', sans-serif;
 }
 
@@ -79,7 +56,7 @@ MAIN LAYOUT
 ========================= */
 
 main {
-  margin-top: 204px;
+  margin-top: 20px;
   display: flex;
   gap: 108px;
 }
@@ -256,42 +233,57 @@ ANIMATION
 /* =========================
 RESPONSIVE
 ========================= */
+@media (max-width:768px){
 
-@media (max-width:768px) {
-
-  body {
-    margin: 60px 20px;
+  body{
+    margin:60px 20px;
   }
 
-  main {
-    flex-direction: column;
-    gap: 80px;
-    margin-top: 120px;
+  h1{
+    font-size:40px;
   }
-
-  h1 {
-    font-size: 40px;
+  main{
+    flex-direction:column;
+    gap:0px;
+    margin-top:0px;
+    font-size:1em;
   }
-
-  .selected {
-    padding-right: 0;
-    margin-top: -450px;
+  .left-column h2{
+    margin-bottom:10px;
+  }
+  .left-column h3{
+    margin-bottom:0;
+  }
+  .left-column li{
+    margin-bottom:10px;
+  }
+  .selected{
+    padding-right:0;
+    margin-top:-380px;
+  }
+  .selected h2{
+    margin-bottom:10px;
+  }
+  .selected li{
+    margin-bottom:10px;
   }
   .featured-image{
+    margin-top:40px;
+    width:100%;
+  }
+  
+
+  .slide-gallery{
+    margin:30px 0 0 0;
     width:100%;
   }
 
-  .slide-gallery {
-    margin-left: 0;
-    width: 100%;
+  .slides img{
+    min-width:70%;
   }
 
-  .slides img {
-    min-width: 70%;
-  }
-
-  footer {
-    margin-left: 0;
+  footer{
+    margin-left:0;
   }
 
 }
