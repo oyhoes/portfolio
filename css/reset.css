@@ -40,11 +40,12 @@ color: inherit;
 }
 
 h2{
-color:#4CA7F9;
+/* color:#4CA7F9; */
+color:rgb(71, 160, 185)
 }
 
 h3{
-  color:#EB5952;
+  color:#fc3c59;
   font-size:.9em;
 }
 address{
