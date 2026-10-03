@@ -1,11 +1,9 @@
-
-
 /* =========================
 BASE
 ========================= */
 
 body {
-  margin: 85px 0 0 200px;
+  margin: 85px 0 0 160px;
   font-family: 'Pretendard', sans-serif;
 }
 
@@ -15,8 +13,8 @@ TYPOGRAPHY
 ========================= */
 
 h1 {
-  font-size: 70px;
-  font-weight: 900;
+  font-size: 110px;
+  font-weight: 700;
 }
 
 main {
@@ -36,8 +34,9 @@ header {
 }
 
 nav {
+  /* border:1px solid red ; */
   visibility: hidden;
-  margin-top: 40px;
+  margin-top: 400px;
 }
 
 nav ul {
@@ -56,6 +55,7 @@ MAIN LAYOUT
 ========================= */
 
 main {
+  /* border: 1px solid red; */
   margin-top: 20px;
   display: flex;
   gap: 108px;
@@ -81,7 +81,8 @@ TEXT BLOCK
 ========================= */
 
 main h2 {
-  margin-bottom: 40px;
+  margin-bottom: -10px;
+  /* border: 1px solid pink; */
 }
 
 main section h3 {
@@ -99,6 +100,12 @@ main section ul li p {
   font-size: .8em;
 }
 
+.works-list h3 {
+  /* 연도 박스 줄이기 */
+  line-height: 0.85;
+  margin: 80px 0 20px;
+
+}
 
 /* =========================
 VIDEO SECTION
@@ -175,7 +182,7 @@ SELECTED WORKS
 ========================= */
 
 .selected .works-list li ul li {
-  margin-bottom: 10px;
+  margin-bottom: 24px;
 }
 
 .selected .works-list li ul li small {
@@ -233,57 +240,65 @@ ANIMATION
 /* =========================
 RESPONSIVE
 ========================= */
-@media (max-width:768px){
+@media (max-width:768px) {
 
-  body{
-    margin:60px 20px;
-  }
-
-  h1{
-    font-size:40px;
-  }
-  main{
-    flex-direction:column;
-    gap:0px;
-    margin-top:0px;
-    font-size:1em;
-  }
-  .left-column h2{
-    margin-bottom:10px;
-  }
-  .left-column h3{
-    margin-bottom:0;
-  }
-  .left-column li{
-    margin-bottom:10px;
-  }
-  .selected{
-    padding-right:0;
-    margin-top:-380px;
-  }
-  .selected h2{
-    margin-bottom:10px;
-  }
-  .selected li{
-    margin-bottom:10px;
-  }
-  .featured-image{
-    margin-top:40px;
-    width:100%;
-  }
-  
-
-  .slide-gallery{
-    margin:30px 0 0 0;
-    width:100%;
+  body {
+    margin: 60px 20px;
   }
 
-  .slides img{
-    min-width:70%;
+  h1 {
+    font-size: 40px;
   }
 
-  footer{
-    margin-left:0;
+  main {
+    flex-direction: column;
+    gap: 0px;
+    margin-top: 0px;
+    font-size: 1em;
+  }
+
+  .left-column h2 {
+    margin-bottom: 10px;
+  }
+
+  .left-column h3 {
+    margin-bottom: 0;
+  }
+
+  .left-column li {
+    margin-bottom: 10px;
+  }
+
+  .selected {
+    padding-right: 0;
+    margin-top: -380px;
+  }
+
+  .selected h2 {
+    margin-bottom: 10px;
+  }
+
+  .selected li {
+    margin-bottom: 10px;
+  }
+
+  .featured-image {
+    margin-top: 40px;
+    width: 100%;
+  }
+
+
+  .slide-gallery {
+    margin: 30px 0 0 0;
+    width: 100%;
+  }
+
+  .slides img {
+    min-width: 70%;
+  }
+
+  footer {
+    margin-left: 0;
   }
 
 }
